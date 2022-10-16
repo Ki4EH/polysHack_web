@@ -1,0 +1,4 @@
+1 - Graph average stone recognition value
+2 - Graph class definition
+3 - tretii
+4 - chetvertii1

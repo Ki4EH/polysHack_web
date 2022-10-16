@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" >
+    <link rel="icon" href="static/css/icon_site.ico" type="image/icon type">
+    <title>Operator Screen</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box3">
+            <div class="vidosio">
+                <video id="vido" autoplay="autoplay", width="100%" height="auto" loop="loop", muted="muted">
+                    <!-- <source src="static/css/video.mp4#t=5,12" type="video/mp4"> -->
+                    <source src="static/css/trim.mp4" type="video/mp4">
+                </video>
+                <script>
+                    var vid = document.getElementById("vido");
+                
+                    function myFunction() { 
+                    document.getElementById("hide").value = vid.currentTime;
+                    seconds = vid.currentTime;
+                    console.log(seconds)
+                    const request = new XMLHttpRequest()
+                    request.open('get', '/', true)
+                    request.setRequestHeader('Content-Type', JSON.stringify(seconds));
+                    request.send();
+                    }
+                    </script>
+            </div> 
+            <div class="box4">
+                <h4>Choose Tier</h4>
+                    <form action="" method="post">
+                        <input type="radio" id="one" name="size" value="one">
+                        <label for="one">One</label><br>
+                        <input type="radio" id="two" name="size" value="two">
+                        <label for="two">Two</label><br>
+                        <input type="radio" id="three" name="size" value="three">
+                        <label for="tree">Three</label><br>
+                        <input type="radio" id="four" name="size" value="four">
+                        <label for="four">Four</label><br>
+                        <input type="radio" id="five" name="size" value="five">
+                        <label for="five">Five</label><br>
+                        <input type="radio" id="six" name="size" value="six">
+                        <label for="one">Six</label><br>
+                        <input type="radio" id="seven" name="size" value="seven">
+                        <label for="seven">Seven</label><br>
+                        
+                        <input type="hidden" id="hide" name="secs" value="">
+                        
+                        <button onclick="myFunction()" type="submit">Submit</button>
+                    </form>
+            </div>
+        </div>
+            <div class="box5">
+                <div class="graph">
+                    <img src="static/css/distr.png" alt="Graph average stone recognition value" style='height: 100%; width: 100%; object-fit: contain'>
+                    <img src="static/css/distr2.jpg" alt="Graph class definition" style='height: 100%; width: 100%; object-fit: contain'>
+                    <!-- <video id="vid" width="85%" height="auto" autoplay="autoplay", loop="loop", muted="muted">
+                        <source src="static/css/video.mp4" type="video/mp4">
+                    </video>
+        
+                    <video id="vid" width="85%" height="auto" autoplay="autoplay", loop="loop", muted="muted">
+                        <source src="static/css/video.mp4" type="video/mp4">
+                    </video>
+            
+                    <video id="vid" width="85%" height="auto" autoplay="autoplay", loop="loop", muted="muted">
+                        <source src="static/css/video.mp4" type="video/mp4">
+                    </video> -->
+            
+                </div>
+                <!-- <div class="graphT">
+                    <!-- <h1>{{ text1 }}</h1>
+                    <h1>{{ text2 }}</h1> -->
+                    <!-- <h1>{{ text3 }}</h1>
+                    <h1>{{ text4 }}</h1> --> -->
+                </div>
+            </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  background-color: #383836;
+}
+.wrapper {
+    display: grid;
+    align-items: flex-end;
+    min-height: 200px;
+    border: dashed;
+    grid-template-columns: 50% 50%;
+    border-color: #ED6B06;
+    border-radius: 1px;
+    width: auto;
+    height: auto;
+  }
+
+  .wrap1 {
+    display: flex;
+    /* align-items: flex-end; */
+    min-height: 200px;
+    /* background-color: grey; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    
+  }
+  .wrap2 {
+    display: flex;
+    /* align-items: flex-end; */
+    min-height: 200px;
+    /* background-color: gray; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  }
+  .box1 {
+    align-self: stretch;
+    /* background-color: green; */
+    border: solid;
+    border-color: #ED6B06;
+    border-radius: 1px;
+  }
+  .box2 {
+    align-self: stretch;
+    /* background-color: red; */
+    border: solid;
+    border-color: #ED6B06;
+    border-radius: 1px;
+  }
+  .box3 {
+    align-self: stretch;
+    /* background-color: blue; */
+    min-height: 200px;
+    border: dashed;
+    border-color: #ED6B06;
+    border-radius: 1px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    grid-template-columns: 50% 50%;
+  }
+  .box4 {
+    align-self: stretch;
+    /* background-color: yellow; */
+    border: solid;
+    border-color: #ED6B06;
+    border-radius: 1px;
+    height:fit-content;
+  }
+  .box5 {
+    display: flex;
+    min-width: auto;
+    align-self: stretch;
+    /* background-color: crimson; */
+    border: solid;
+    border-color: #ED6B06;
+    border-radius: 1px;
+    /* grid-template-columns: 50% 50%; */
+    width: "100%"; 
+    height: "auto";
+  }
+  h4 {
+    font-family: Stem, Arial, sans-serif;;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+    color: aliceblue;
+  }
+  video {
+    margin: auto;
+  }
+  label {
+    font-family: Stem, Arial, sans-serif;;
+    text-align: center;
+    font-size: 25px;
+    font-size: 100%;
+    font-style: bold;
+    color: aliceblue;
+  }
+  button {
+    display: inline-block;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100%;
+    font: bold;
+    font-size: medium;
+    text-shadow: none;
+    }
+  .graph {
+    display: grid;
+    width: 100%; 
+    height: auto;
+  }
+  .graphT {
+    display: grid;
+    width: 100%;
+    height: auto;
+  }
